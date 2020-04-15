@@ -7,14 +7,15 @@
           <the-head/>
           <section id="navigation">
             <div class="thenavcontent">
-              <a href="#">Bio</a>
-              <a href="#">Work</a>
-              <a href="#">Writing</a>
+              <router-link to="/bio">Bio</router-link>
+              <router-link to="/projects">Work</router-link>
+              <router-link to="/">Writing</router-link>
             </div>
           </section>
           <the-footer/>
         </div>
       </div>
+      
       <div id="bottom"></div>
     </div>
   </div>
@@ -23,14 +24,12 @@
 <script>
 
 export default {
-
 name: 'Home'
 
 }
 </script>
 
 <style scoped>
-
 #top{
     grid-row: 1/3;
     /* background-color: yellow; */
@@ -58,13 +57,17 @@ name: 'Home'
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
   }
-  a{
+  .thenavcontent > a{
     color: #00ffff;
     text-decoration: none;   
     font-family: 'Courier New', Courier, monospace;
     font-size: 17px;
     font-weight: bold;
     padding-top: 10px;   
+    /* list-style-type: none; */
   }
 </style>
+
+

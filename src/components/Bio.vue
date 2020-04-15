@@ -9,14 +9,14 @@
           <div class="theheading">
             <div id="title">Bio</div>
             <div id="closeButton">
-              <a href="">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11.024" height="11.024" viewBox="0 0 11.024 11.024">
-                <g id="Group_7" data-name="Group 7" transform="translate(-414.011 -966.551) rotate(45)">
-                  <line id="Line_1" data-name="Line 1" y2="13" transform="translate(984 384.5)" fill="none" stroke="red" stroke-width="2"/>
-                  <line id="Line_2" data-name="Line 2" x1="13" transform="translate(977.5 390.409)" fill="none" stroke="red" stroke-width="2"/>
-                </g>
-              </svg>
-              </a>              
+                <router-link to="/">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="11.024" height="11.024" viewBox="0 0 11.024 11.024">
+                    <g id="Group_7" data-name="Group 7" transform="translate(-414.011 -966.551) rotate(45)">
+                    <line id="Line_1" data-name="Line 1" y2="13" transform="translate(984 384.5)" fill="none" stroke="red" stroke-width="2"/>
+                    <line id="Line_2" data-name="Line 2" x1="13" transform="translate(977.5 390.409)" fill="none" stroke="red" stroke-width="2"/>
+                    </g>
+                    </svg>
+                </router-link>
             </div>
           </div>
           <div class="thebiobody">
@@ -94,8 +94,7 @@ export default {
     font-weight: bold;
   }
   #bottom{
-    grid-row: 8/9;
-    
+    grid-row: 8/9;    
     /* background-color: green; */
   }
 </style>
