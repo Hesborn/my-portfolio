@@ -1,8 +1,8 @@
 <template>
   <div class="container">
       <div class="developmentarea">
-      <div id="top"></div>
-      <div id="middle">
+      
+      <div id="main-home">
         <div id="centercontent">
           <the-head/>
           <section id="navigation">
@@ -14,9 +14,8 @@
           </section>
           <the-footer/>
         </div>
-      </div>
+      </div>      
       
-      <div id="bottom"></div>
     </div>
   </div>
 </template>
@@ -30,18 +29,10 @@ name: 'Home'
 </script>
 
 <style scoped>
-#top{
-    grid-row: 1/3;
-    /* background-color: yellow; */
-  }
-  #middle{
+  #main-home{
     grid-row: 3/7;
     /* background-color: darkviolet; */
   }  
-  #bottom{
-    grid-row: 7/9;
-    /* background-color: green; */
-  } 
   #navigation{
     width: 685px;
     height: 220px;
@@ -68,6 +59,33 @@ name: 'Home'
     padding-top: 10px;   
     /* list-style-type: none; */
   }
+  
+  
+  
+  @media(max-width: 500px){
+  #main-home{
+    grid-row: 2/9;
+    /* background-color: darkviolet; */
+
+  }  
+  #navigation{
+    width: 320px;
+    height: 150px;
+    /* border: 1px solid green; */
+    position: relative;
+    box-sizing: border-box;
+  }
+  .thenavcontent{
+    position: absolute;
+    top: 20%;
+    left: 36%;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+    }
 </style>
 
 

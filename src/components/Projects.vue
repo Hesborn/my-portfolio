@@ -56,6 +56,7 @@ export default {
   #thecontent{
     border-top: 1px solid #00ffff;
     border-bottom: 1px solid #00ffff;
+    /* background-color: blue; */
     height: 100%;
     width: 510px;
     position: absolute;
@@ -70,37 +71,35 @@ export default {
     padding-top: 15px;
     padding-bottom: 15px;
     /* border: 1px solid chartreuse; */
-
   }
   .projectbody{
     height: 80%;
     /* border: 1px solid snow; */
     width: 510px;
-    box-sizing: border-box;
     display: grid;
     grid-template-columns:repeat(2,1fr) ;
     grid-template-rows: repeat(2,1fr);
     padding-top: 35px;
+    box-sizing: border-box;
+  }
+  .projectbody > *{
+    padding-left: 18px;
   }
   #project-one{
     grid-column:1/2;
     grid-row: 1/2;
-    padding-left: 18px;
   }
   #project-two{
     grid-column:2/3;
     grid-row: 1/2;
-    padding-left: 18px;
   }
   #project-three{
     grid-column:1/2;
     grid-row: 2/3;
-    padding-left: 18px;
   }
   #project-four{
     grid-column:2/3;
     grid-row: 2/3;
-    padding-left: 18px;
   }
   #title{
     color: #00ffff;
@@ -112,4 +111,60 @@ export default {
     grid-row: 8/9;    
     /* background-color: green; */
   }
+  @media(max-width: 500px){
+    #thecontent{
+    border-top: 1px solid #232B3D;
+    border-bottom: 1px solid #232B3D;  
+    height: 100%;
+    width: 320px;
+    position: absolute;
+    left: 0%;
+    box-sizing: border-box;
+  }
+  .theheading{
+    width: 320px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px 15px 30px;
+    box-sizing: border-box;
+    /* border: 1px solid chartreuse; */
+  }
+   .projectbody{
+    height: 80%;
+    /* border: 1px solid snow; */
+    width: 320px;    
+    display: grid;
+    grid-template-columns:repeat(1fr) ;
+    grid-template-rows: repeat(4,1fr);
+    margin-top: 15px;
+    padding-top: 20px;
+    padding-left: 29px;
+    overflow-y: scroll;
+    box-sizing: border-box;
+  }
+    #title{
+    font-size: 15px;
+  }
+    #project-one{
+    grid-column:1/2;
+    grid-row: 1/2;
+    margin-bottom: 10px;
+  }
+  #project-two{
+    grid-column:1/2;
+    grid-row: 2/3;
+    margin-bottom: 10px;
+  }
+  #project-three{
+    grid-column:1/2;
+    grid-row: 3/4;
+    margin-bottom: 10px;
+  }
+  #project-four{
+    grid-column:1/2;
+    grid-row: 4/5;
+    margin-bottom: 10px;
+  }
+    }
 </style>

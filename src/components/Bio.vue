@@ -20,18 +20,17 @@
             </div>
           </div>
           <div class="thebiobody">
-            UI Designer, Front-End Developer &<br>
+             UI Designer, Front-End Developer &<br>
             Writer.
-            <br><br><br><br><br>
+            <br><br>
             HTML5, CSS3, Javascript, Vue JS<br><br>
             Adobe XD, Adobe Illustrator,<br>
             Photoshop
             <br><br><br><br><br>
-            Living in Nairobi, Kenya.<br><br>
-            Husband to a queen, Father to a<br>
-            gladiator.<br><br>
+            Proud husband & father.<br><br>
             Loves Computers, Music, Books and<br>
-            great Films.
+            Films.<br><br>
+            Living in Nairobi, Kenya.
           </div>
         </div>
       </div>
@@ -64,24 +63,27 @@ export default {
   #thecontent{
     border-top: 1px solid #00ffff;
     border-bottom: 1px solid #00ffff;
+    /* background-color: blue; */
     height: 100%;
-    width: 385px;
+    width: 510px;
     position: absolute;
-    left: 30%;
+    left: 12%;
   }  
   .theheading{
-    width: 385px;
+    width: 510px;
     height: 30px;
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
     padding-bottom: 15px;
     /* border: 1px solid chartreuse; */
-
   }
   .thebiobody{
-    height: 80%;
+    height: 60%;
     /* border: 1px solid snow; */
+    position: relative;
+    top: 5%;
+    left: 24%;
     color: #ffffff;
     text-decoration: none;   
     font-family: 'Courier New', Courier, monospace;
@@ -96,5 +98,35 @@ export default {
   #bottom{
     grid-row: 8/9;    
     /* background-color: green; */
+  }
+
+  @media(max-width: 500px){
+   #thecontent{
+    border-top: 1px solid #232B3D;
+    border-bottom: 1px solid #232B3D;    
+    height: 92%;
+    width: 320px;
+    padding-top: 15px;
+    left: 0%;
+  } 
+  .theheading{
+    width: 320px;
+    display: flex;
+    padding-left: 30px;
+    padding-right: 40px;
+    box-sizing: border-box;
+  }
+    .thebiobody{
+    height: 75%;
+    position: relative;
+    top: 5%;
+    left: 0%;
+    font-size: 12px;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+    #title{
+    font-size: 15px;
+  }
   }
 </style>

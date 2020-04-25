@@ -1,7 +1,7 @@
 <template>
   <div class="headerstuff">
     <img src="@/assets/my-bust.png" alt="" class="thephoto">
-    <p class="intro">Hello, my names are Hesborn Paul Ongwae and<br> I am a UI Designer, Front-end Developer<br> and Writer.</p>   
+    <p class="intro">Hello, I'm Hesborn Paul Ongwae and I am a UI Designer, Front-end Developer and Writer.</p>   
   </div>
 </template>
 
@@ -21,10 +21,11 @@ export default {
   }
   .thephoto{
     position: absolute;
-    left: 13%;
+    left: 12%;
     /* border: 1px solid red; */
   }
   .intro{
+    width: 395px;
     position: absolute;
     left: 30%;
     /* border: 1px solid red; */
@@ -33,5 +34,28 @@ export default {
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
     color: #ffffff;
+  }
+
+  @media(max-width: 600px){
+    .headerstuff{
+    height: 140px;
+    width: 320px;
+    box-sizing: border-box;     
+    }
+    .thephoto{
+    left: 33%;
+    }
+    .intro{
+    width: 320px;    
+    left: 0%;
+    top: 60%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;    
+    }
+    p{
+    font-size: 13px;
+    text-align: center;
+    }
   }
 </style>
