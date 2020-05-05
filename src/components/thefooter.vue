@@ -36,18 +36,32 @@ export default {
     top: 65%;
     left: 30%;
   }
-  @media(max-width: 500px){
+
+    /* This is the tablet and small laptops media query 
+  ___________________________________________________
+  */
+
+  @media (min-width: 601px) and (max-width: 900px){
     .footerstuff{
-    height: 50px;
-    width: 320px;
-    position: relative;
-    /* background-color: black; */
-    box-sizing: border-box;
+      height: 50px;
+      width: 600px;
+    }
+    .svgdiv{
+      top: 50%;
+      left: 31%;
+    }  
   }
-  .svgdiv{
-    position: absolute;
-    top: 50%;
-    left: 30%;
-  }
+
+  /* This is the smartphone media query */
+
+  @media(max-width: 600px){
+      .footerstuff{
+      height: 50px;
+      width: 320px;
+    }
+    .svgdiv{
+      top: 50%;
+      left: 30%;
+    }
   }
 </style>

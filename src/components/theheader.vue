@@ -36,6 +36,27 @@ export default {
     color: #ffffff;
   }
 
+
+
+  /* This is the tablet and small laptops media query 
+  ___________________________________________________
+  */
+
+  @media (min-width: 601px) and (max-width: 900px){
+    .headerstuff{
+    height: 140px;
+    width: 600px;
+    box-sizing: border-box;     
+    }
+    .intro{
+    width: 350px;    
+    left: 30%;
+    }
+  }
+
+
+  /* This is the smartphone media query */
+
   @media(max-width: 600px){
     .headerstuff{
     height: 140px;

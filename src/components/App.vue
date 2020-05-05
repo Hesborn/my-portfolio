@@ -33,22 +33,20 @@ export default {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8,1fr);
   }
-  @media(max-width: 500px){
+  @media (min-width: 601px) and (max-width: 900px){
     .container{
-    width: 320px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 100vh;
-    /* background-color: cadetblue; */
+    width: 600px;
     }
     .developmentarea{
     grid-column:1/-1;
-    grid-row: 1/-1;
-    /* background-color: red; */
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(8,1fr);
+  }
+  }
+  @media(max-width: 600px){
+    .container{
+    width: 320px;
+    }
+    .developmentarea{
+    grid-column:1/-1;
   }
 
   }
